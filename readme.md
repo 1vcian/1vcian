@@ -25,7 +25,7 @@
 
 ```js
 const 1vcian = {
-  education:'Computer and Automation Engineering',
+  education:'Sapienza Università di Roma, Computer and Automation Engineering',
   interest :['DevOps', 'Full Stack Development', 'Cybersecurity'],
   current:  'Learning ML & Working on Full Stack Projects',
   tech: {
