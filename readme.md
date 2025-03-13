@@ -44,7 +44,7 @@ const 1vcian = {
 
 <div align="center">
   <img src="https://skillicons.dev/icons?i=python,js,html,css" />
-  <img src="https://skillicons.dev/icons?i=react,threejs,tailwind,nodejs,express" />
+  <img src="https://skillicons.dev/icons?i=react,angular,threejs,tailwind,nodejs,express" />
   <img src="https://skillicons.dev/icons?i=aws,docker,github,linux,svn" />
   <img src="https://skillicons.dev/icons?i=flask,fastapi,postgresql,mysql,mongodb" />
   <img src="https://skillicons.dev/icons?i=tensorflow,pytorch,opencv" />
