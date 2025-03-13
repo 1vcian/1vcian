@@ -24,7 +24,7 @@
 </h2>
 
 ```js
-const 1vcian = {
+const _1vcian = {
   education:'Sapienza Università di Roma, Computer and Automation Engineering',
   interest :['DevOps', 'Full Stack Development', 'Cybersecurity'],
   current:  'Learning ML & Working on Full Stack Projects',
