@@ -43,10 +43,10 @@ const 1vcian = {
 </h2>
 
 <div align="center">
-  <img src="https://skillicons.dev/icons?i=python,js,html,css" />
-  <img src="https://skillicons.dev/icons?i=react,angular,threejs,tailwind,nodejs,express" />
-  <img src="https://skillicons.dev/icons?i=aws,docker,github,linux,svn" />
-  <img src="https://skillicons.dev/icons?i=flask,fastapi,postgresql,mysql,mongodb" />
+  <img src="https://skillicons.dev/icons?i=python,js,html,css,vite,ps" />
+  <img src="https://skillicons.dev/icons?i=react,angular,jquery,threejs,bootstrap,tailwind,nodejs,express" />
+  <img src="https://skillicons.dev/icons?i=aws,docker,github,linux" />
+  <img src="https://skillicons.dev/icons?i=flask,fastapi,postgresql,mysql,mongodb,java" />
   <img src="https://skillicons.dev/icons?i=tensorflow,pytorch,opencv" />
-  <img src="https://skillicons.dev/icons?i=arduino,bash" />
+  <img src="https://skillicons.dev/icons?i=arduino,raspberrypi,bash" />
 </div>
