@@ -26,7 +26,7 @@
 ```js
 const _1vcian = {
   education:'Sapienza Università di Roma, Computer and Automation Engineering',
-  interest :['DevOps', 'Full Stack Development', 'Cybersecurity'],
+  interest :['Full Stack Development', 'AI', 'Cybersecurity'],
   current:  'Learning ML & Working on Full Stack Projects',
   tech: {
     backend:  ['Python', 'Flask', 'FastAPI', 'Node.js', 'Geopanda'],
