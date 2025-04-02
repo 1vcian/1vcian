@@ -5,7 +5,7 @@
   <a href="https://linkedin.com/in/lume">
     <img src="https://img.shields.io/badge/LinkedIn-%230A66C2.svg?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
   </a>
-  <a href="https://linkedin.com/in/lume">
+  <a href="https://1vcian.github.io/Portfolio/">
     <img src="https://img.shields.io/badge/Website-%23171717.svg?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Website">
   </a>
     <a href="https://github.com/1vcian">
