@@ -5,7 +5,7 @@
   <a href="https://linkedin.com/in/lume">
     <img src="https://img.shields.io/badge/LinkedIn-%230A66C2.svg?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
   </a>
-  <a href="https://1vcian.github.io/Portfolio/">
+  <a href="https://1vcian.me">
     <img src="https://img.shields.io/badge/Website-%23171717.svg?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Website">
   </a>
     <a href="https://github.com/1vcian">
@@ -17,7 +17,6 @@
   
 </div>
 
-
 <h2 align="left">
   <img src="https://media2.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif?cid=ecf05e47a0n3gi1bfqntqmob8g9aid1oyj2wr3ds3mg700bl&rid=giphy.gif" width="20px" height="20px"> 
   About Me 
@@ -25,13 +24,15 @@
 
 ```js
 const _1vcian = {
-  education:'Sapienza Università di Roma, Computer and Automation Engineering',
-  interest :['Full Stack Development', 'AI', 'Cybersecurity'],
-  current:  'Learning ML & Working on Full Stack Projects',
-  tech: {
-    backend:  ['Python', 'Flask', 'FastAPI', 'Node.js', 'Geopanda'],
-    frontend: ['React.js', 'angular.js', 'JQuery', 'Tailwind CSS', 'Bootstrap', 'Openlayers' ],
-    cloud:    ['AWS', 'Docker', 'Linux', 'Cloudfront'],
+  role: 'Software Engineer',
+  education: 'Sapienza Università di Roma, Computer and Automation Engineering',
+  focus: ['AI/LLM Integrations', 'High-Performance GIS', 'Cybersecurity', 'Open Source'],
+  building: 'Engineering AI pipelines & shipping offline-first applications',
+  stack: {
+    backend:  ['Python', 'Node.js', 'FastAPI', 'Flask', 'PMTiles', 'COG', 'FGB'],
+    frontend: ['React', 'Angular', 'Tailwind CSS', 'OpenLayers'],
+    cloud_ai: ['Google Cloud (Vertex AI)', 'AWS', 'Docker', 'LLMs / RAG'],
+    hardware: ['Arduino', 'IoT', 'GNSS / OSNMA']
   },
   funFact: "To view my digital business card, open your terminal and type: 'npx 1vcian' ✨",
 };
