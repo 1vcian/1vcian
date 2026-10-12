@@ -8,13 +8,12 @@
   <a href="https://1vcian.me">
     <img src="https://img.shields.io/badge/Website-%23171717.svg?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Website">
   </a>
-    <a href="https://github.com/1vcian">
-    <img src="https://komarev.com/ghpvc/?username=1vcian&style=for-the-badge&color=blueviolet" alt="Profile Views">
-  </a>
   <a href="https://www.npmjs.com/package/1vcian">
     <img src="https://img.shields.io/badge/CLI-npx_1vcian-red?style=for-the-badge&logo=npm&logoColor=white" alt="CLI Card">
   </a>
-  
+      <a href="https://github.com/1vcian">
+  <img src="https://komarev.com/ghpvc/?username=1vcian" alt="Profile Views">
+</a>
 </div>
 
 <h2 align="left">
