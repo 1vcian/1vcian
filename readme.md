@@ -2,6 +2,8 @@
 
   <h1>Hello! <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="35px" height="35px"> I'm Lucian </h1>
   <a href="https://im.center/1vcian"><img src="https://im.center/b/1vcian.svg" alt="1vcian on im.center" height="36"></a>
+  </div>
+  <div align="center">
   <a href="https://linkedin.com/in/lume">
     <img src="https://img.shields.io/badge/LinkedIn-%230A66C2.svg?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
   </a>
@@ -11,9 +13,9 @@
   <a href="https://www.npmjs.com/package/1vcian">
     <img src="https://img.shields.io/badge/CLI-npx_1vcian-red?style=for-the-badge&logo=npm&logoColor=white" alt="CLI Card">
   </a>
-      <a href="https://github.com/1vcian">
+<!--      <a href="https://github.com/1vcian">
   <img src="https://komarev.com/ghpvc/?username=1vcian" alt="Profile Views">
-</a>
+</a> --!>
 </div>
 
 <h2 align="left">
