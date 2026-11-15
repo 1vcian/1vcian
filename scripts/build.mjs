@@ -124,8 +124,7 @@ function answer(board) {
 
 // ── tic-tac-toe: every page ────────────────────────────────────────────────
 
-const HEADING = "Beat me at tic-tac-toe";
-const PROFILE = `https://github.com/1vcian#${HEADING.toLowerCase().replace(/[^a-z0-9 -]/g, "").replace(/ /g, "-")}`;
+const PROFILE = "https://github.com/1vcian#tic-tac-toe"; // the anchor placed just above the game in readme.md
 const SIZE = 88;
 
 const idOf = (board, last) => `${board.join("")}-${last ?? "n"}`;

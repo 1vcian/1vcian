@@ -10,6 +10,6 @@
 
 <p>I took the top edge. Your turn.</p>
 
-<p><a href="new.md">New game</a> &nbsp;·&nbsp; <a href="o________-0.md">Let me start instead</a> &nbsp;·&nbsp; <a href="https://github.com/1vcian#beat-me-at-tic-tac-toe">Back to my profile</a></p>
+<p><a href="new.md">New game</a> &nbsp;·&nbsp; <a href="o________-0.md">Let me start instead</a> &nbsp;·&nbsp; <a href="https://github.com/1vcian#tic-tac-toe">Back to my profile</a></p>
 
 </div>
