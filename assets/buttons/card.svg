@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 154 46" width="154" height="46" role="img" aria-label="npx 1vcian">
+<rect x="6" y="6" width="146" height="38" rx="19" fill="#ffb200"/>
+<rect x="2" y="2" width="146" height="38" rx="19" fill="#fff5dc" stroke="#0d1020" stroke-width="3"/>
+<g transform="translate(17 11.5) scale(0.79)"><path fill="none" stroke="#0d1020" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" d="m4 7 5 5-5 5M12.5 18H20"/></g>
+<text x="46" y="26.2" fill="#0d1020" font-family="Menlo, Consolas, 'Liberation Mono', monospace" font-size="14" font-weight="700" textLength="84" lengthAdjust="spacingAndGlyphs">npx 1vcian</text>
+</svg>
