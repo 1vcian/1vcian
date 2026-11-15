@@ -53,10 +53,10 @@ A software engineer in Rome who likes two things: code that actually ships, and 
 </p>
 
 <!-- Keep this line right under the board: after a move the Worker sends visitors back to the blank character in it. -->
-<p><sub><sub><sub><sub><sub><sub><sub><sub>&#10240;</sub></sub></sub></sub></sub></sub></sub></sub> <sub>You play X. There is one board, and everyone visiting plays on it.</sub></p>
+<p><sub><sup><sub><sup><ruby><rt><ruby><rt>&#10240;</rt></ruby></rt></ruby></sup></sub></sup></sub> <sub>You play X. There is one board, and everyone visiting plays on it.</sub></p>
 
 <p><a href="https://1vcian-tictactoe.medrihanlucian.workers.dev/" title="Refresh the board"><img src="https://1vcian-tictactoe.medrihanlucian.workers.dev/caption.svg" width="520" alt="The state of the game and the score so far"></a></p>
 
-<p><a href="https://1vcian-tictactoe.medrihanlucian.workers.dev/new">New game</a> &nbsp;·&nbsp; <a href="https://1vcian-tictactoe.medrihanlucian.workers.dev/new?first=me">Let me start</a> &nbsp;·&nbsp; <a href="https://github.com/1vcian/1vcian/tree/main/worker">Put one on your profile</a></p>
+<p><a href="https://1vcian-tictactoe.medrihanlucian.workers.dev/new">New game</a> &nbsp;·&nbsp; <a href="https://1vcian-tictactoe.medrihanlucian.workers.dev/new?first=me">Let me start</a> &nbsp;·&nbsp; <a href="https://github.com/1vcian/readme-tic-tac-toe">Put one on your profile</a></p>
 
 </div>

@@ -10,8 +10,9 @@ const W = worker.replace(/\/$/, "");
 const SPOTS = ["top left", "top", "top right", "left", "centre", "right", "bottom left", "bottom", "bottom right"];
 const square = (i) => `<a href="${W}/play/${i}" title="Play ${SPOTS[i]}"><img src="${W}/cell/${i}.svg" width="88" height="88" alt="${SPOTS[i]} square"></a>`;
 const rows = [0, 3, 6].map((start) => [0, 1, 2].map((offset) => square(start + offset)).join(" "));
-// The landing mark: a blank character (U+2800) the browser can scroll to, nested in <sub> until it is a pixel wide.
-const mark = `${"<sub>".repeat(8)}&#10240;${"</sub>".repeat(8)}`;
+// The landing mark: a blank character (U+2800) the browser can scroll to, shrunk until it is about a pixel
+// wide. GitHub keeps each tag nested twice at most, so it takes a mix: sub and sup are 75% each, rt is 50%.
+const mark = "<sub><sup><sub><sup><ruby><rt><ruby><rt>&#10240;</rt></ruby></rt></ruby></sup></sub></sup></sub>";
 const links = [`<a href="${W}/new">New game</a>`, `<a href="${W}/new?first=me">Let me start</a>`, source && `<a href="${source}">Put one on your profile</a>`].filter(Boolean);
 
 console.log(`<div align="center">
