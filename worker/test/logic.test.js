@@ -93,5 +93,8 @@ test("the pictures are well-formed and say the right thing", () => {
     assert.match(caption(game), /^<svg[^]*<\/svg>$/);
   }
   assert.ok(tile(won, 0).includes("#ffb200\" stroke"), "the winning squares are amber");
+  assert.ok(caption(fresh(), "1vcian.me").includes(">1vcian.me</text>"), "the caption is signed");
+  assert.ok(!caption(fresh()).includes("text-anchor=\"end\""), "and unsigned when no name is set");
+  assert.ok(caption(fresh(), "<b>").includes("&lt;b&gt;"));
   assert.equal(put(EMPTY, 0, "x"), "x________");
 });

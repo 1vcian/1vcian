@@ -50,13 +50,17 @@ export function captionText(game) {
   return { headline, score };
 }
 
-export function caption(game) {
+const escape = (text) => String(text).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+
+/** The line under the board. `signature` (a name, a site) is written in the corner: the board says whose it is. */
+export function caption(game, signature = "") {
   const { headline, score } = captionText(game);
-  const font = `font-family="Helvetica, Arial, sans-serif" text-anchor="middle"`;
+  const font = `font-family="Helvetica, Arial, sans-serif"`;
+  const signed = signature ? `\n<text x="496" y="62" fill="${INK}" ${font} text-anchor="end" font-size="11" font-weight="700" opacity="0.55">${escape(signature)}</text>` : "";
   return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 78" width="520" height="78" role="img" aria-label="${headline} ${score}">
 <rect x="7" y="7" width="509" height="67" rx="16" fill="${AMBER}"/>
 <rect x="2" y="2" width="509" height="67" rx="16" fill="${PAPER}" stroke="${INK}" stroke-width="3"/>
-<text x="256" y="31" fill="${INK}" ${font} font-size="17" font-weight="700">${headline}</text>
-<text x="256" y="53" fill="${INK}" ${font} font-size="13" opacity="0.75">${score}</text>
+<text x="256" y="29" fill="${INK}" ${font} text-anchor="middle" font-size="17" font-weight="700">${headline}</text>
+<text x="256" y="49" fill="${INK}" ${font} text-anchor="middle" font-size="13" opacity="0.75">${score}</text>${signed}
 </svg>`;
 }

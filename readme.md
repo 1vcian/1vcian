@@ -45,18 +45,18 @@ A software engineer in Rome who likes two things: code that actually ships, and 
 
 <div align="center">
 
-<!-- The board is live: each square is a picture served by worker/, each click a move. -->
+<!-- Tic-tac-toe served by a Cloudflare Worker: each square is a live picture, each click a move. -->
 <p>
 <a href="https://1vcian-tictactoe.medrihanlucian.workers.dev/play/0" title="Play top left"><img src="https://1vcian-tictactoe.medrihanlucian.workers.dev/cell/0.svg" width="88" height="88" alt="top left square"></a> <a href="https://1vcian-tictactoe.medrihanlucian.workers.dev/play/1" title="Play top"><img src="https://1vcian-tictactoe.medrihanlucian.workers.dev/cell/1.svg" width="88" height="88" alt="top square"></a> <a href="https://1vcian-tictactoe.medrihanlucian.workers.dev/play/2" title="Play top right"><img src="https://1vcian-tictactoe.medrihanlucian.workers.dev/cell/2.svg" width="88" height="88" alt="top right square"></a><br>
 <a href="https://1vcian-tictactoe.medrihanlucian.workers.dev/play/3" title="Play left"><img src="https://1vcian-tictactoe.medrihanlucian.workers.dev/cell/3.svg" width="88" height="88" alt="left square"></a> <a href="https://1vcian-tictactoe.medrihanlucian.workers.dev/play/4" title="Play centre"><img src="https://1vcian-tictactoe.medrihanlucian.workers.dev/cell/4.svg" width="88" height="88" alt="centre square"></a> <a href="https://1vcian-tictactoe.medrihanlucian.workers.dev/play/5" title="Play right"><img src="https://1vcian-tictactoe.medrihanlucian.workers.dev/cell/5.svg" width="88" height="88" alt="right square"></a><br>
 <a href="https://1vcian-tictactoe.medrihanlucian.workers.dev/play/6" title="Play bottom left"><img src="https://1vcian-tictactoe.medrihanlucian.workers.dev/cell/6.svg" width="88" height="88" alt="bottom left square"></a> <a href="https://1vcian-tictactoe.medrihanlucian.workers.dev/play/7" title="Play bottom"><img src="https://1vcian-tictactoe.medrihanlucian.workers.dev/cell/7.svg" width="88" height="88" alt="bottom square"></a> <a href="https://1vcian-tictactoe.medrihanlucian.workers.dev/play/8" title="Play bottom right"><img src="https://1vcian-tictactoe.medrihanlucian.workers.dev/cell/8.svg" width="88" height="88" alt="bottom right square"></a>
 </p>
 
-<!-- The Worker sends visitors back to these words, so the board lands in view. Keep them right under it. -->
-<p><sub>You play X. There is one board, and everyone visiting plays on it.</sub></p>
+<!-- Keep this line right under the board: after a move the Worker sends visitors back to the blank character in it. -->
+<p><sub><sub><sub><sub><sub><sub><sub><sub>&#10240;</sub></sub></sub></sub></sub></sub></sub></sub> <sub>You play X. There is one board, and everyone visiting plays on it.</sub></p>
 
-<p><a href="#tic-tac-toe"><img src="https://1vcian-tictactoe.medrihanlucian.workers.dev/caption.svg" width="520" alt="The state of the game and the score so far"></a></p>
+<p><a href="https://1vcian-tictactoe.medrihanlucian.workers.dev/" title="Refresh the board"><img src="https://1vcian-tictactoe.medrihanlucian.workers.dev/caption.svg" width="520" alt="The state of the game and the score so far"></a></p>
 
-<p><a href="https://1vcian-tictactoe.medrihanlucian.workers.dev/new">New game</a> &nbsp;·&nbsp; <a href="https://1vcian-tictactoe.medrihanlucian.workers.dev/new?first=me">Let me start</a></p>
+<p><a href="https://1vcian-tictactoe.medrihanlucian.workers.dev/new">New game</a> &nbsp;·&nbsp; <a href="https://1vcian-tictactoe.medrihanlucian.workers.dev/new?first=me">Let me start</a> &nbsp;·&nbsp; <a href="https://github.com/1vcian/1vcian/tree/main/worker">Put one on your profile</a></p>
 
 </div>

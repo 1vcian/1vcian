@@ -1,4 +1,4 @@
-// The tic-tac-toe on https://github.com/1vcian.
+// A tic-tac-toe for a GitHub profile README (this one: https://github.com/1vcian).
 //
 // A README cannot run code, but it can show pictures and follow links. So
 // each square is a picture served from here, wrapped in a link to here: the
@@ -12,15 +12,17 @@
 //   GET /state         the game as JSON
 //
 // There is one board, and everyone who visits plays on it.
+// Whose profile it is, and the name signed under the board, are set in wrangler.jsonc.
 
 import { DurableObject } from "cloudflare:workers";
 import { caption, tile } from "./draw.js";
 import { current, fresh, play, restart } from "./logic.js";
 
 // Back to the profile, scrolled to the board. Anchors do not work on a profile
-// page, so this is a text fragment: the browser scrolls to the words under
-// the board ("You play X"), which puts the board itself right in view.
-const HOME = "https://github.com/1vcian#:~:text=You%20play%20X";
+// page, so this is a text fragment: the browser scrolls to a piece of text.
+// The README keeps a blank character (U+2800) under the board, shrunk to a
+// pixel, so the board lands in view and nothing shows as highlighted.
+const homeOf = (env) => `${env.PROFILE}#:~:text=%E2%A0%80`;
 const FRESH = { "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate" };
 
 /** Holds the one game. A Durable Object, so two clicks can never trample each other. */
@@ -55,17 +57,18 @@ function isVisitor(request) {
 }
 
 const svg = (body) => new Response(body, { headers: { "Content-Type": "image/svg+xml; charset=utf-8", ...FRESH } });
-const home = () => new Response(null, { status: 302, headers: { Location: HOME, ...FRESH } });
+const backTo = (url) => new Response(null, { status: 302, headers: { Location: url, ...FRESH } });
 
 export default {
   async fetch(request, env) {
     if (request.method !== "GET" && request.method !== "HEAD") return new Response("Method not allowed", { status: 405 });
     const url = new URL(request.url);
     const game = env.GAME.get(env.GAME.idFromName("the-board"));
+    const home = () => backTo(homeOf(env));
 
     const cell = url.pathname.match(/^\/cell\/([0-8])\.svg$/);
     if (cell) return svg(tile(await game.view(), Number(cell[1])));
-    if (url.pathname === "/caption.svg") return svg(caption(await game.view()));
+    if (url.pathname === "/caption.svg") return svg(caption(await game.view(), env.SIGNATURE));
 
     const move = url.pathname.match(/^\/play\/([0-8])$/);
     if (move) {
