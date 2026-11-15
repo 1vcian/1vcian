@@ -8,8 +8,8 @@
 <a href="xxo_o_ox_-2.md"><img src="../assets/ttt/o-win.svg" width="88" height="88" alt="my O, bottom left"></a> <a href="xxo_o_ox_-2.md"><img src="../assets/ttt/x.svg" width="88" height="88" alt="your X, bottom"></a> <a href="xxo_o_ox_-2.md"><img src="../assets/ttt/off.svg" width="88" height="88" alt="empty square, bottom right"></a>
 </p>
 
-<p>Don't take it badly: whichever square you picked, I had an answer ready.</p>
+<p>Don't take it badly: nobody has beaten me yet.</p>
 
-<p><a href="new.md">↺ New game</a> &nbsp;·&nbsp; <a href="o________-0.md">This time I start</a> &nbsp;·&nbsp; <a href="https://github.com/1vcian#beat-me-at-tic-tac-toe">← Back to my profile</a></p>
+<p><a href="new.md">New game</a> &nbsp;·&nbsp; <a href="o________-0.md">This time I start</a> &nbsp;·&nbsp; <a href="https://github.com/1vcian#beat-me-at-tic-tac-toe">Back to my profile</a></p>
 
 </div>

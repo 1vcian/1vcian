@@ -8,8 +8,8 @@
 <a href="o_o__xx__-0.md" title="Play bottom left"><img src="../assets/ttt/free.svg" width="88" height="88" alt="empty square, bottom left: play here"></a> <a href="o_o__x_x_-0.md" title="Play bottom"><img src="../assets/ttt/free.svg" width="88" height="88" alt="empty square, bottom: play here"></a> <a href="o_o__x__x-0.md" title="Play bottom right"><img src="../assets/ttt/free.svg" width="88" height="88" alt="empty square, bottom right: play here"></a>
 </p>
 
-<p>I took the top right corner. You are ✕: pick a square.</p>
+<p>I took the top right corner. Your turn.</p>
 
-<p><a href="new.md">↺ New game</a> &nbsp;·&nbsp; <a href="o________-0.md">Let me start instead</a> &nbsp;·&nbsp; <a href="https://github.com/1vcian#beat-me-at-tic-tac-toe">← Back to my profile</a></p>
+<p><a href="new.md">New game</a> &nbsp;·&nbsp; <a href="o________-0.md">Let me start instead</a> &nbsp;·&nbsp; <a href="https://github.com/1vcian#beat-me-at-tic-tac-toe">Back to my profile</a></p>
 
 </div>

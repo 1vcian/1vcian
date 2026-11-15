@@ -10,27 +10,36 @@
 
 <a href="https://im.center/1vcian"><img src="https://im.center/b/1vcian.svg" alt="1vcian on im.center" height="36"></a>
 
+<img src="https://komarev.com/ghpvc/?username=1vcian&label=profile+views&color=2f6fed&style=flat-square" alt="Profile views">
+
 </div>
 
-## Hi, I'm Lucian 👋
+<h2 align="left">
+  <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="28" height="28" alt="">
+  Hi, I'm Lucian
+</h2>
 
 A software engineer in Rome who likes two things: code that actually ships, and finding out how things break.
 
-- 🛰️ &nbsp;**By day** I build production systems for public institutions: GIS platforms and machine learning on satellite imagery, on projects for the Italian Ministry of Agriculture and ESA.
-- 🐛 &nbsp;**Off the clock** I hunt bugs, because I enjoy it. A lot of vulnerabilities found and reported, several of them rated CVSS 10.
-- 🎮 &nbsp;**For fun** I build the ideas I can't leave alone: games on the App Store and Google Play, open-source tools that grew their own communities, even an emulator.
-- 🚩 &nbsp;**It started at 12**, poking at things with BackTrack. That became a degree in Computer and Automation Engineering at Sapienza and a CTF team I co-founded.
+- **By day** I build production systems for public institutions: GIS platforms and machine learning on satellite imagery, on projects for the Italian Ministry of Agriculture and ESA.
+- **Off the clock** I hunt bugs, because I enjoy it. A lot of vulnerabilities found and reported, several of them rated CVSS 10.
+- **For fun** I build the ideas I can't leave alone: games on the App Store and Google Play, open-source tools that grew their own communities, even an emulator.
+- **It started at 12**, poking at things with BackTrack. That became a degree in Computer and Automation Engineering at Sapienza and a CTF team I co-founded.
 
-The projects I'm proudest of are pinned right below.
+<h2 align="left">
+  <img src="https://media2.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif?cid=ecf05e47a0n3gi1bfqntqmob8g9aid1oyj2wr3ds3mg700bl&rid=giphy.gif" width="20" height="20" alt="">
+  Toolbox
+</h2>
 
-## 🧰 Toolbox
-
-<p>
+<p align="center">
   <img src="https://skillicons.dev/icons?i=python,ts,react,angular,nodejs,fastapi,flask,tailwind,threejs&perline=9" alt="Python, TypeScript, React, Angular, Node.js, FastAPI, Flask, Tailwind CSS, three.js"><br>
   <img src="https://skillicons.dev/icons?i=kotlin,rust,cpp,aws,gcp,docker,linux,firebase,githubactions&perline=9" alt="Kotlin, Rust, C++, AWS, Google Cloud, Docker, Linux, Firebase, GitHub Actions">
 </p>
 
-## Beat me at tic-tac-toe
+<h2 align="left">
+  <img src="https://media2.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif?cid=ecf05e47a0n3gi1bfqntqmob8g9aid1oyj2wr3ds3mg700bl&rid=giphy.gif" width="20" height="20" alt="">
+  Beat me at tic-tac-toe
+</h2>
 
 <div align="center">
 
@@ -41,7 +50,7 @@ The projects I'm proudest of are pinned right below.
 <a href="play/____o_x__-4.md" title="Play bottom left"><img src="assets/ttt/free.svg" width="88" height="88" alt="empty square, bottom left: play here"></a> <a href="play/______ox_-6.md" title="Play bottom"><img src="assets/ttt/free.svg" width="88" height="88" alt="empty square, bottom: play here"></a> <a href="play/____o___x-4.md" title="Play bottom right"><img src="assets/ttt/free.svg" width="88" height="88" alt="empty square, bottom right: play here"></a>
 </p>
 
-<p>You are ✕: pick a square. There is no server behind this: I worked out all <b>502</b> positions you can reach in advance. Rather I start? <a href="play/o________-0.md">Go on then.</a></p>
+<p>You play X: pick a square. Rather I start? <a href="play/o________-0.md">Go on then.</a></p>
 <!-- game:end -->
 
 </div>
