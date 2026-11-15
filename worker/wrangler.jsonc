@@ -1,0 +1,13 @@
+{
+  // The tic-tac-toe on the profile README. One Worker, one Durable Object
+  // that holds the board everyone plays on. Deploy with `npx wrangler deploy`.
+  "name": "1vcian-tictactoe",
+  "main": "src/worker.js",
+  "compatibility_date": "2026-08-15",
+  "workers_dev": true,
+  "preview_urls": false,
+  "durable_objects": {
+    "bindings": [{ "name": "GAME", "class_name": "Game" }]
+  },
+  "migrations": [{ "tag": "v1", "new_sqlite_classes": ["Game"] }]
+}
