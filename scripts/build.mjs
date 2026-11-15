@@ -1,5 +1,4 @@
 // Draws the link buttons under the banner: `node scripts/build.mjs`.
-// (The tic-tac-toe is not generated here: it is served live by worker/.)
 
 import { mkdirSync, writeFileSync } from "node:fs";
 

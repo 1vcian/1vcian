@@ -21,7 +21,7 @@
 
 A software engineer in Rome who likes two things: code that actually ships, and finding out how things break.
 
-- **By day** I build production systems for public institutions: GIS platforms and machine learning on satellite imagery, on projects for the Italian Ministry of Agriculture and ESA.
+- **By day** I build GIS platforms and machine learning on satellite imagery, the kind that has to hold up in production.
 - **Off the clock** I hunt bugs, because I enjoy it. A lot of vulnerabilities found and reported, several of them rated CVSS 10.
 - **For fun** I build the ideas I can't leave alone: games on the App Store and Google Play, open-source tools that grew their own communities, even an emulator.
 - **It started at 12**, poking at things with BackTrack. That became a degree in Computer and Automation Engineering at Sapienza and a CTF team I co-founded.
@@ -36,26 +36,112 @@ A software engineer in Rome who likes two things: code that actually ships, and 
   <img src="https://skillicons.dev/icons?i=kotlin,rust,cpp,aws,gcp,docker,linux,firebase,githubactions&perline=9" alt="Kotlin, Rust, C++, AWS, Google Cloud, Docker, Linux, Firebase, GitHub Actions">
 </p>
 
-<a name="tic-tac-toe"></a>
-
 <h2 align="left">
   <img src="https://media2.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif?cid=ecf05e47a0n3gi1bfqntqmob8g9aid1oyj2wr3ds3mg700bl&rid=giphy.gif" width="20" height="20" alt="">
-  Beat me at tic-tac-toe
+  Capture the flag
 </h2>
 
-<div align="center">
+There is a flag somewhere on this machine, and you are logged in as `guest`. Click a command to run it.
 
-<!-- The board is live: each square is a picture served by worker/, each click a move. -->
-<p>
-<a href="https://1vcian-tictactoe.medrihanlucian.workers.dev/play/0" title="Play top left"><img src="https://1vcian-tictactoe.medrihanlucian.workers.dev/cell/0.svg" width="88" height="88" alt="top left square"></a> <a href="https://1vcian-tictactoe.medrihanlucian.workers.dev/play/1" title="Play top"><img src="https://1vcian-tictactoe.medrihanlucian.workers.dev/cell/1.svg" width="88" height="88" alt="top square"></a> <a href="https://1vcian-tictactoe.medrihanlucian.workers.dev/play/2" title="Play top right"><img src="https://1vcian-tictactoe.medrihanlucian.workers.dev/cell/2.svg" width="88" height="88" alt="top right square"></a><br>
-<a href="https://1vcian-tictactoe.medrihanlucian.workers.dev/play/3" title="Play left"><img src="https://1vcian-tictactoe.medrihanlucian.workers.dev/cell/3.svg" width="88" height="88" alt="left square"></a> <a href="https://1vcian-tictactoe.medrihanlucian.workers.dev/play/4" title="Play centre"><img src="https://1vcian-tictactoe.medrihanlucian.workers.dev/cell/4.svg" width="88" height="88" alt="centre square"></a> <a href="https://1vcian-tictactoe.medrihanlucian.workers.dev/play/5" title="Play right"><img src="https://1vcian-tictactoe.medrihanlucian.workers.dev/cell/5.svg" width="88" height="88" alt="right square"></a><br>
-<a href="https://1vcian-tictactoe.medrihanlucian.workers.dev/play/6" title="Play bottom left"><img src="https://1vcian-tictactoe.medrihanlucian.workers.dev/cell/6.svg" width="88" height="88" alt="bottom left square"></a> <a href="https://1vcian-tictactoe.medrihanlucian.workers.dev/play/7" title="Play bottom"><img src="https://1vcian-tictactoe.medrihanlucian.workers.dev/cell/7.svg" width="88" height="88" alt="bottom square"></a> <a href="https://1vcian-tictactoe.medrihanlucian.workers.dev/play/8" title="Play bottom right"><img src="https://1vcian-tictactoe.medrihanlucian.workers.dev/cell/8.svg" width="88" height="88" alt="bottom right square"></a>
-</p>
+<details>
+<summary><code>$ sudo cat /root/flag.txt</code></summary>
 
-<p><a href="#tic-tac-toe"><img src="https://1vcian-tictactoe.medrihanlucian.workers.dev/caption.svg" width="520" alt="The state of the game and the score so far"></a></p>
+```console
+[sudo] password for guest:
+guest is not in the sudoers file. This incident will be reported.
+```
 
-<p><a href="https://1vcian-tictactoe.medrihanlucian.workers.dev/new">New game</a> &nbsp;·&nbsp; <a href="https://1vcian-tictactoe.medrihanlucian.workers.dev/new?first=me">Let me start</a></p>
+Bold. Try something quieter.
 
-<sub>You play X. There is one board, and everyone visiting plays on it.</sub>
+</details>
 
-</div>
+<details>
+<summary><code>$ ls -la</code></summary>
+
+```console
+total 20
+drwxr-x--- 2 guest guest 4096 Nov 15 16:20 .
+drwxr-xr-x 4 root  root  4096 Nov 15 09:02 ..
+-rw------- 1 guest guest  214 Nov 15 16:19 .bash_history
+-rwx------ 1 root  root   512 Nov 14 23:40 backup.sh
+-rw-r--r-- 1 guest guest   61 Nov 14 23:48 notes.txt
+```
+
+Three files. One of them is more talkative than it should be.
+
+<details>
+<summary><code>$ ./backup.sh</code></summary>
+
+```console
+bash: ./backup.sh: Permission denied
+```
+
+It belongs to root, and you are not root. Yet.
+
+</details>
+
+<details>
+<summary><code>$ cat notes.txt</code></summary>
+
+```console
+TODO: stop typing passwords before the prompt asks for them
+```
+
+A note to self. Interesting thing to need a note about.
+
+</details>
+
+<details>
+<summary><code>$ cat .bash_history</code></summary>
+
+```console
+cd ~/projects
+git pull
+su lucian
+correct-horse-battery-staple
+ls -la
+```
+
+Line four is not a command. Somebody typed a password a moment too early, and the shell wrote it down.
+
+<details>
+<summary><code>$ history -c</code></summary>
+
+```console
+guest@1vcian:~$
+```
+
+Tidy, but too late: you have already read it.
+
+</details>
+
+<details>
+<summary><code>$ su lucian</code></summary>
+
+```console
+Password: ****************************
+lucian@1vcian:~$ cat flag.txt
+flag{th3_sh3ll_r3m3mb3rs_3v3ryth1ng}
+```
+
+**You are in.** That is most of the job, really: look where nobody thought to clean up.
+
+Send me the flag at [medrihanlucian@gmail.com](mailto:medrihanlucian@gmail.com?subject=flag%7Bth3_sh3ll_r3m3mb3rs_3v3ryth1ng%7D) and say hi. And if reading the raw README was your first idea, even better: we would get along.
+
+</details>
+
+</details>
+
+</details>
+
+<details>
+<summary><code>$ rm -rf /</code></summary>
+
+```console
+rm: it is dangerous to operate recursively on '/'
+rm: use --no-preserve-root to override this failsafe
+```
+
+And that is why you are `guest`.
+
+</details>
