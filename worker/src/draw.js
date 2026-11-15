@@ -36,14 +36,16 @@ ${MARKS[cell]}
 /** What to say about the game, and the running score. */
 export function captionText(game) {
   let headline;
-  if (winLine(game.board)) headline = "Three in a row. I win. Pick a square for a rematch.";
+  const line = winLine(game.board);
+  if (line && game.board[line[0]] === "x") headline = "Three in a row. You win! Pick a square to go again.";
+  else if (line) headline = "Three in a row. I win. Pick a square for a rematch.";
   else if (isOver(game.board)) headline = "A draw. Pick a square to go again.";
   else if (game.board === EMPTY) headline = "Your move. You play X.";
   else headline = `I took ${NAMES[game.last]}. Your move.`;
 
   const plural = (n, one, many) => `${n} ${n === 1 ? one : many}`;
   const score = game.played
-    ? `${plural(game.played, "game", "games")} so far: I won ${game.won}, ${plural(game.drawn, "draw", "draws")}, you won 0`
+    ? `${plural(game.played, "game", "games")} so far: I won ${game.won}, ${plural(game.drawn, "draw", "draws")}, you won ${game.lost ?? 0}`
     : "No games yet. Be the first to try.";
   return { headline, score };
 }

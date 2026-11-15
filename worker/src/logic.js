@@ -31,19 +31,44 @@ function value(board, turn) {
   return result;
 }
 
-/** My move: never a losing one and, among equals, the one that leaves you the most ways to slip. */
-export function reply(board) {
-  let best = null;
+/** How often I get careless: about one move in four. */
+export const SLIP = 0.25;
+
+/** The square that completes three in a row for `who`, if there is one. */
+function finishing(board, who) {
+  for (const i of free(board)) if (winLine(put(board, i, who))) return i;
+  return null;
+}
+
+/**
+ * My move. I always take a win and always block yours when it is one move
+ * away. Otherwise I usually play the best square, and now and then any
+ * square: that is your opening, if you can build two threats at once.
+ */
+export function reply(board, random = Math.random) {
+  const forced = finishing(board, "o") ?? finishing(board, "x");
+  if (forced !== null) return forced;
+  if (random() < SLIP) {
+    const open = free(board);
+    return open[Math.floor(random() * open.length)];
+  }
+  return best(board);
+}
+
+/** The best square: never a losing one and, among equals, the one that leaves you the most ways to go wrong. */
+function best(board) {
+  let pick = null;
   for (const i of TASTE.filter((cell) => board[cell] === "_")) {
     const after = put(board, i, "o");
     const traps = free(after).filter((j) => value(put(after, j, "x"), "o") > 0).length;
     const score = value(after, "x");
-    if (!best || score > best.score || (score === best.score && traps > best.traps)) best = { i, score, traps };
+    if (!pick || score > pick.score || (score === pick.score && traps > pick.traps)) pick = { i, score, traps };
   }
-  return best.i;
+  return pick.i;
 }
 
-export const fresh = (stats = {}) => ({ board: EMPTY, last: null, at: 0, played: stats.played ?? 0, won: stats.won ?? 0, drawn: stats.drawn ?? 0 });
+/** A clean board. The score is carried over: games played, won by me, drawn, lost by me. */
+export const fresh = (stats = {}) => ({ board: EMPTY, last: null, at: 0, played: stats.played ?? 0, won: stats.won ?? 0, drawn: stats.drawn ?? 0, lost: stats.lost ?? 0 });
 
 /** What a visitor should see now: an abandoned game counts as a clean board. */
 export function current(game, now) {
@@ -52,10 +77,10 @@ export function current(game, now) {
 }
 
 /** A new game. With `iStart` I open. */
-export function restart(game, now, iStart = false) {
+export function restart(game, now, iStart = false, random = Math.random) {
   const next = { ...fresh(game), at: now };
   if (iStart) {
-    next.last = reply(EMPTY);
+    next.last = reply(EMPTY, random);
     next.board = put(EMPTY, next.last, "o");
   }
   return next;
@@ -65,7 +90,7 @@ export function restart(game, now, iStart = false) {
  * You take square i, I answer. On a finished board the click starts a new
  * game with that square. A click on a taken square changes nothing.
  */
-export function play(game, i, now) {
+export function play(game, i, now, random = Math.random) {
   if (!Number.isInteger(i) || i < 0 || i > 8) return game;
   let next = isOver(game.board) ? { ...fresh(game) } : { ...game };
   if (next.board[i] !== "_") return game;
@@ -74,13 +99,15 @@ export function play(game, i, now) {
   next.last = null;
   next.at = now;
   if (!isOver(next.board)) {
-    next.last = reply(next.board);
+    next.last = reply(next.board, random);
     next.board = put(next.board, next.last, "o");
   }
   if (isOver(next.board)) {
+    const line = winLine(next.board);
     next.played++;
-    if (winLine(next.board)) next.won++;
-    else next.drawn++;
+    if (!line) next.drawn++;
+    else if (next.board[line[0]] === "o") next.won++;
+    else next.lost = (next.lost ?? 0) + 1;
   }
   return next;
 }
