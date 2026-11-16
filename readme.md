@@ -22,7 +22,7 @@
 A software engineer in Rome who likes two things: code that actually ships, and finding out how things break.
 
 - **By day** I build GIS platforms and machine learning on satellite imagery, the kind that has to hold up in production.
-- **Off the clock** I hunt bugs, because I enjoy it. A lot of vulnerabilities found and reported, several of them rated CVSS 10.
+- **Off the clock** I do bug bounty, because I enjoy it, with findings up to CVSS 10. These days I'm on [CyberDart](https://cyberdart.eu/hackers/0bee51c0-609f-4b44-ace4-2cae56bddd91).
 - **For fun** I build the ideas I can't leave alone: games on the App Store and Google Play, open-source tools that grew their own communities, even an emulator.
 - **It started at 12**, poking at things with BackTrack. That became a degree in Computer and Automation Engineering at Sapienza and a CTF team I co-founded.
 
